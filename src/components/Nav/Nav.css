@@ -76,20 +76,21 @@
 
 /* button */
 .nav__button {
-  padding: 12px 20px;
-  background: #ff7a1a;
-  color: #fff;
-  border-radius: 8px;
   font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #fafafa;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #fafafa;
+  background: #ff7a1a;
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+  margin: 0;
   text-decoration: none;
-  font-size: 0.9rem;
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
 }
 
 .nav__button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(255, 122, 26, 0.2);
+  box-shadow: none;
+  transform: translate(3px, 3px);
 }

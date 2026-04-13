@@ -67,6 +67,7 @@ function Home() {
         <div className="home__visual">
           <div className="home__card home__card--large">
             <span>Professional storefront signage</span>
+            {/* <img src={} alt="portfolio image" className="Home__card-image" /> */}
           </div>
 
           <div className="home__visual-bottom">

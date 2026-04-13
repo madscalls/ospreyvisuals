@@ -36,7 +36,6 @@
 .nav__logo {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .nav__logo-box {
@@ -50,6 +49,11 @@
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+}
+
+.nav__logo-pic {
+  height: 50px;
+  width: auto;
 }
 
 .nav__logo-text {

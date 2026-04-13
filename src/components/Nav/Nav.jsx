@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Logo from "../../assets/ov1.svg";
 import "./Nav.css";
 
 function Nav() {
@@ -17,8 +18,7 @@ function Nav() {
     <header className={`nav ${scrolled ? "nav--scrolled" : ""}`}>
       <div className="nav__container">
         <div className="nav__logo">
-          <span className="nav__logo-box">OV</span>
-          <span className="nav__logo-text">Osprey Visuals</span>
+          <img src={Logo} className="nav__logo-pic" alt="Osprey Visuals Logo" />
         </div>
 
         <nav className="nav__links">

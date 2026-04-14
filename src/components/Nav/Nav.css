@@ -150,5 +150,5 @@ a:hover {
 }
 
 .nav__button:active span::before {
-  background: #2751cd;
+  background: #ff7a1a;
 }

@@ -1,18 +1,22 @@
 import "./Footer.css";
+import insta from "../../assets/Instagram_Glyph_Black.png";
+import Facebook from "../../assets/Fb.png";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer__container">
-        <a href="#top" className="footer__brand">
-          <span className="footer__logo">OV</span>
-          <span className="footer__brand-text">Osprey Visuals</span>
-        </a>
-
         <nav className="footer__nav">
-          <a href="#services">Services</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#why-us">Why Us</a>
+          <a href="#">
+            <img
+              src={insta}
+              className="Footer__social-icon insta"
+              alt="Instagram"
+            />
+          </a>
+          <a href="#">
+            <img src={Facebook} className="Footer__social-icon fb" />
+          </a>
           <a href="#contact">Contact</a>
         </nav>
 

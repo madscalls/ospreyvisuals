@@ -66,6 +66,22 @@
   text-align: right;
 }
 
+.Footer__social-icon {
+  height: 45px;
+  width: auto;
+}
+
+.fb {
+  position: relative;
+  filter: invert(100%);
+  height: 50px;
+  top: -3px;
+}
+
+.insta {
+  filter: invert(100%);
+}
+
 @media (max-width: 900px) {
   .footer__container {
     grid-template-columns: 1fr;

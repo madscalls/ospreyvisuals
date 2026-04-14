@@ -1,4 +1,9 @@
 import "./Home.css";
+import Lettering from "../../assets/lettering.png";
+import blueboat from "../../assets/boatbefore.png";
+import store from "../../assets/store.png";
+import bluecar from "../../assets/bluecar.png";
+import van from "../../assets/van.png";
 
 function Home() {
   return (
@@ -67,16 +72,30 @@ function Home() {
         <div className="home__visual">
           <div className="home__card home__card--large">
             <span>Professional storefront signage</span>
-            {/* <img src={} alt="portfolio image" className="Home__card-image" /> */}
+            <img
+              src={blueboat}
+              alt="portfolio image"
+              className="Home__card-image Home__card-imgmain"
+            />
           </div>
 
           <div className="home__visual-bottom">
             <div className="home__card home__card--small">
               <span>Vehicle wrap design</span>
+              <img
+                src={bluecar}
+                alt="portfolio image"
+                className="Home__card-image home__card-imgleft"
+              />
             </div>
 
             <div className="home__card home__card--small">
               <span>Brand identity package</span>
+              <img
+                src={van}
+                alt="portfolio image"
+                className="Home__card-image home__card-imgsmall"
+              />
             </div>
           </div>
 

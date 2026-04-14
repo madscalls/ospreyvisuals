@@ -201,7 +201,7 @@
 }
 
 .home__card--large {
-  height: 330px;
+  height: 430px;
 }
 
 .home__visual-bottom {
@@ -216,8 +216,8 @@
 
 .home__stat-card {
   position: absolute;
-  left: -20px;
-  bottom: 70px;
+  left: 24px;
+  bottom: -13px;
   padding: 18px 22px;
   border-radius: 20px;
   background: rgba(15, 19, 27, 0.96);
@@ -235,6 +235,28 @@
   margin: 0;
   font-size: 2.4rem;
   line-height: 1;
+}
+
+.Home__card-image {
+  filter: hue-rotate(175deg);
+}
+
+.home__card-imgmain {
+  position: relative;
+  top: -100px;
+}
+.home__card-imgsmall {
+  object-fit: scale-down;
+  position: relative;
+  height: 110%;
+  width: auto;
+}
+
+.home__card-imgleft {
+  object-fit: contain;
+  position: relative;
+  top: -250px;
+  left: -120px;
 }
 
 @media (max-width: 980px) {

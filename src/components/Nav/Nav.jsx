@@ -29,7 +29,8 @@ function Nav() {
         </nav>
 
         <a href="#contact" className="nav__button">
-          Get a Quote
+          FREE ESTIMATE
+          <span></span>
         </a>
       </div>
     </header>

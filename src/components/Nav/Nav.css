@@ -64,37 +64,91 @@
 /* links */
 .nav__links {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 28px;
 }
 
 .nav__links a {
   text-decoration: none;
   color: #8f98a8;
+  position: relative;
+  display: block;
   font-size: 0.95rem;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
 }
 
-.nav__links a:hover {
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.nav__links a:hover::before {
+  width: 100%;
+}
+
+a:hover {
   color: #ffffff;
 }
 
-/* button */
+/* From Uiverse.io by adamgiebl */
 .nav__button {
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 1rem;
-  color: #fafafa;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 2px solid #fafafa;
-  background: #ff7a1a;
-  box-shadow: 3px 3px #fafafa;
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 18px;
+  background: transparent;
   cursor: pointer;
-  margin: 0;
+  user-select: none;
+  overflow: hidden;
+  color: #ff7a1a;
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 800;
   text-decoration: none;
 }
 
+.nav__button span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 4px solid ff7a1a;
+}
+
+.nav__button span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+}
+
+.nav__button:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: #ff7a1a;
+}
+
 .nav__button:hover {
-  box-shadow: none;
-  transform: translate(3px, 3px);
+  color: white;
+}
+
+.nav__button:active span::before {
+  background: #2751cd;
 }

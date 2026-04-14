@@ -1,6 +1,8 @@
 html {
   background-color: black;
   color-scheme: dark;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {

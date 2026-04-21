@@ -4,8 +4,11 @@ import blueboat from "../../assets/boatbefore.png";
 import store from "../../assets/store.png";
 import bluecar from "../../assets/bluecar.png";
 import van from "../../assets/van.png";
+import Carousel from "../Carousel/Carousel";
 
 function Home() {
+  const heroImages = [blueboat, bluecar, van, store];
+
   return (
     <section className="home">
       <div className="home__container">
@@ -71,12 +74,7 @@ function Home() {
 
         <div className="home__visual">
           <div className="home__card home__card--large">
-            <span>Professional storefront signage</span>
-            <img
-              src={blueboat}
-              alt="portfolio image"
-              className="Home__card-image Home__card-imgmain"
-            />
+            <Carousel images={heroImages} />
           </div>
 
           <div className="home__visual-bottom">

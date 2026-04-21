@@ -3,22 +3,17 @@
   padding: 110px 0;
   color: #ffffff;
   background:
-    repeating-linear-gradient(
-      -45deg,
-      rgba(255, 255, 255, 0.045) 0,
-      rgba(255, 255, 255, 0.045) 1px,
-      transparent 1px,
-      transparent 34px
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(255, 122, 26, 0.08),
+      transparent 22%
     ),
     linear-gradient(
-      8deg,
-      transparent 0%,
-      transparent 58%,
-      rgba(255, 255, 255, 0.035) 58.2%,
-      transparent 58.4%,
-      transparent 100%
+      180deg,
+      rgba(7, 9, 13, 0.88) 0%,
+      rgba(9, 12, 18, 0.88) 100%
     ),
-    linear-gradient(180deg, #06080c 0%, #090b10 100%);
+    url("../../assets/diamond-plate.png") center / cover;
   overflow: hidden;
 }
 

@@ -97,58 +97,88 @@ a:hover {
   color: #ffffff;
 }
 
+/* hamburger */
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav__hamburger span {
+  width: 24px;
+  height: 2px;
+  background: #8f98a8;
+  transition: 0.3s;
+}
+
+.nav__hamburger:hover span {
+  background: #ffffff;
+}
+
+/* mobile menu */
+.nav__links--open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(6, 8, 12, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 20px;
+  gap: 20px;
+  z-index: 999;
+}
+
+.nav__links--open a {
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
 /* From Uiverse.io by adamgiebl */
+
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+
+  .nav__button--desktop {
+    display: none;
+  }
+
+  .nav__hamburger {
+    display: flex;
+  }
+
+  .nav__container {
+    position: relative;
+    width: min(100% - 32px, 1200px);
+  }
+}
 .nav__button {
   border: none;
   display: block;
   position: relative;
   padding: 0.7em 2.4em;
   font-size: 18px;
-  background: transparent;
+  background: #ff7a1a;
+  color: #fff;
   cursor: pointer;
-  user-select: none;
-  overflow: hidden;
-  color: #ff7a1a;
-  z-index: 1;
   font-family: inherit;
   font-weight: 800;
   text-decoration: none;
-}
-
-.nav__button span {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  z-index: -1;
-  border: 4px solid ff7a1a;
-}
-
-.nav__button span::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 8%;
-  height: 500%;
-  background: var(--lightgray);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-60deg);
-  transition: all 0.3s;
-}
-
-.nav__button:hover span::before {
-  transform: translate(-50%, -50%) rotate(-90deg);
-  width: 100%;
-  background: #ff7a1a;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .nav__button:hover {
-  color: white;
-}
-
-.nav__button:active span::before {
-  background: #ff7a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(255, 122, 26, 0.3);
 }

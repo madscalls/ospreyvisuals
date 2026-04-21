@@ -39,7 +39,7 @@ function Home() {
           </blockquote>
 
           <div className="home__actions">
-            <a href="#quote" className="home__button home__button--primary">
+            <a href="#contact" className="home__button home__button--primary">
               Get a Free Quote
             </a>
 

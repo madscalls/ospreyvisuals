@@ -23,7 +23,7 @@ function Nav() {
 
         <nav className="nav__links">
           <a href="#services">Services</a>
-          <a href="#portfolio">Portfolio</a>
+          <a href="https://www.instagram.com/ospreyvisualsfl/">Portfolio</a>
           <a href="#why-us">Why Us</a>
           <a href="#contact">Contact</a>
         </nav>

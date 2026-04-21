@@ -1,20 +1,27 @@
 import "./Impact.css";
+import BeforeAfterSlider from "../BeforeAfterSlider/BeforeAfterSlider";
+import boatBefore from "../../assets/boat.png";
+import boatAfter from "../../assets/boat2.png";
+import vanBefore from "../../assets/van.png"; // swap with your actual van before image
+import vanAfter from "../../assets/van1.png"; // swap with your actual van after image
 
 function Impact() {
   const projects = [
     {
-      imageLabel: "Storefront Transformation",
       title: "Storefront Transformation",
       description:
         "Turned a low-visibility storefront into a high-impact brand presence that customers notice from down the street.",
       result: "More foot traffic within the first week",
+      beforeSrc: boatBefore,
+      afterSrc: boatAfter,
     },
     {
-      imageLabel: "Vehicle Wrap Rebrand",
       title: "Vehicle Wrap Rebrand",
       description:
         "Transformed a plain fleet van into a professional mobile billboard reaching thousands of potential customers daily.",
       result: "New calls coming in from people who saw the van",
+      beforeSrc: vanBefore,
+      afterSrc: vanAfter,
     },
   ];
 
@@ -34,19 +41,10 @@ function Impact() {
           {projects.map((project) => (
             <article key={project.title} className="impact__card">
               <div className="impact__image">
-                <span className="impact__image-label">
-                  {project.imageLabel}
-                </span>
-
-                <div className="impact__toggle">
-                  <span className="impact__pill impact__pill--before">
-                    Before
-                  </span>
-                  <span className="impact__arrow">›</span>
-                  <span className="impact__pill impact__pill--after">
-                    After
-                  </span>
-                </div>
+                <BeforeAfterSlider
+                  beforeSrc={project.beforeSrc}
+                  afterSrc={project.afterSrc}
+                />
               </div>
 
               <div className="impact__content">

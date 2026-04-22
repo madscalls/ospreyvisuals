@@ -239,9 +239,9 @@
   line-height: 1;
 }
 
-.Home__card-image {
+/* .Home__card-image {
   filter: hue-rotate(175deg);
-}
+} */
 
 .home__card-imgmain {
   position: relative;

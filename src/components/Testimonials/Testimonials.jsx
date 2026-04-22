@@ -10,24 +10,21 @@ function Testimonials() {
   const testimonials = [
     {
       quote:
-        "Osprey Visuals transformed our shop front completely. We started getting more walk-in customers within a week—people told us they noticed the new sign from down the block.",
-      result: "More walk-ins within the first week",
-      name: "Marcus Johnson",
-      business: "Johnson's Auto Care",
+        "I explained my vision to Nick, and he captured everything I had in mind perfectly. I am extremely happy with the results! I highly recommend them to all my friends who need vehicle wraps, car lettering, or advertisement signs.",
+      result: "Great customer service",
+      name: "Wellington N.",
     },
     {
       quote:
-        "The branding package they built for us is exactly what we needed. Logo, vehicle wrap, printed menus—everything matches and we finally look like a real, established business.",
-      result: "Cohesive brand across every touchpoint",
-      name: "Sarah Chen",
-      business: "Bloom Bakery",
+        "I want to thank Chad for designing my lettering on my business truck, what an awesome job he did and the proffesionalism that he gave me",
+      result: "Proffesionalism",
+      name: "John R",
     },
     {
       quote:
-        "I was upfront that I had a tight budget. They worked with me, explained every decision, and delivered something that genuinely makes us look better than our competition.",
-      result: "Professional look on a small business budget",
-      name: "David Martinez",
-      business: "Martinez Landscaping",
+        "These guys do an Amazing job! I went in their shop around 2 PM on a Thursday afternoon to discuss getting a name installed on my boat. By 4 PM it was complete. They had gone to the marina where my boat was stored. Outstanding customer service! These guys ROCK!",
+      result: "Prompt Service",
+      name: "Richard Harris",
     },
   ];
 

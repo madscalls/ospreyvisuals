@@ -67,7 +67,7 @@ function Home() {
 
             <div className="home__reviews">
               <div className="home__stars">★★★★★</div>
-              <p>Trusted by 200+ local businesses</p>
+              <p>Trusted by 100+ local businesses</p>
             </div>
           </div>
         </div>

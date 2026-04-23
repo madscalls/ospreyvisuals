@@ -69,6 +69,7 @@
 .Footer__social-icon {
   height: 45px;
   width: auto;
+  transition: transform 0.2s ease;
 }
 
 .fb {
@@ -80,6 +81,10 @@
 
 .insta {
   filter: invert(100%);
+}
+
+.footer__nav a:hover .Footer__social-icon {
+  transform: scale(1.1);
 }
 
 @media (max-width: 900px) {
@@ -100,6 +105,14 @@
   .footer__copyright {
     text-align: center;
   }
+
+  .Footer__social-icon {
+    height: 40px;
+  }
+
+  .fb {
+    height: 44px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -109,5 +122,17 @@
 
   .footer__nav {
     gap: 16px;
+  }
+
+  .Footer__social-icon {
+    height: 36px;
+  }
+
+  .fb {
+    height: 40px;
+  }
+
+  .footer__nav a {
+    padding: 8px;
   }
 }

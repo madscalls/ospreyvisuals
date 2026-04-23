@@ -149,10 +149,6 @@ a:hover {
     display: none;
   }
 
-  .nav__button--desktop {
-    display: none;
-  }
-
   .nav__hamburger {
     display: flex;
   }
@@ -161,7 +157,20 @@ a:hover {
     position: relative;
     width: min(100% - 32px, 1200px);
   }
+
+  .nav__button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
 }
+
+@media (max-width: 432px) {
+  .nav__button {
+    padding: 10px 14px;
+    font-size: 0.8rem;
+  }
+}
+
 .nav__button {
   border: none;
   display: block;

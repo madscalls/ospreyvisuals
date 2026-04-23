@@ -218,9 +218,9 @@
 
 .home__stat-card {
   position: absolute;
-  left: 24px;
-  bottom: -13px;
-  padding: 18px 22px;
+  left: 10px;
+  bottom: 10px;
+  padding: 10px 15px;
   border-radius: 20px;
   background: rgba(15, 19, 27, 0.96);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -289,11 +289,15 @@
   .home__actions {
     width: 100%;
     flex-direction: column;
+    gap: 12px;
   }
 
   .home__button {
     width: 100%;
     text-align: center;
+    padding: 14px 20px;
+    font-size: 0.9rem;
+    box-sizing: border-box;
   }
 
   .home__visual-bottom {

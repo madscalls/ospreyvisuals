@@ -5,6 +5,12 @@ import boatAfter from "../../assets/boat2.png";
 import vanBefore from "../../assets/van.png"; // swap with your actual van before image
 import vanAfter from "../../assets/van1.png"; // swap with your actual van after image
 
+import copBefore from "../../assets/copcarbefore.jpg";
+import copAfter from "../../assets/copcarafter.jpg";
+
+import motorBefore from "../../assets/motorbefore.jpg";
+import motorAfter from "../../assets/motorafter.jpg";
+
 function Impact() {
   const projects = [
     {
@@ -12,16 +18,16 @@ function Impact() {
       description:
         "Turned a low-visibility storefront into a high-impact brand presence that customers notice from down the street.",
       result: "More foot traffic within the first week",
-      beforeSrc: boatBefore,
-      afterSrc: boatAfter,
+      beforeSrc: copBefore,
+      afterSrc: copAfter,
     },
     {
       title: "Vehicle Wrap Rebrand",
       description:
         "Transformed a plain fleet van into a professional mobile billboard reaching thousands of potential customers daily.",
       result: "New calls coming in from people who saw the van",
-      beforeSrc: vanBefore,
-      afterSrc: vanAfter,
+      beforeSrc: motorBefore,
+      afterSrc: motorAfter,
     },
   ];
 

@@ -44,9 +44,8 @@ function Nav() {
           </a>
         </nav>
 
-        <a href="#contact" className="nav__button nav__button--desktop">
+        <a href="#contact" className="nav__button">
           FREE ESTIMATE
-          <span></span>
         </a>
 
         <button

@@ -108,6 +108,8 @@ a:hover {
   border: none;
   cursor: pointer;
   padding: 0;
+  z-index: 1001;
+  position: relative;
 }
 
 .nav__hamburger span {
@@ -121,31 +123,34 @@ a:hover {
   background: #ffffff;
 }
 
-/* mobile menu */
-.nav__links--open {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: rgba(6, 8, 12, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  padding: 20px;
-  gap: 20px;
-  z-index: 999;
-}
-
-.nav__links--open a {
-  font-size: 1rem;
-  padding: 10px 0;
-}
-
 /* From Uiverse.io by adamgiebl */
 
 @media (max-width: 768px) {
   .nav__links {
+    display: none;
+  }
+
+  .nav__links.nav__links--open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(6, 8, 12, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    gap: 20px;
+    z-index: 999;
+  }
+
+  .nav__links.nav__links--open a {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  .nav__button {
     display: none;
   }
 
@@ -156,11 +161,6 @@ a:hover {
   .nav__container {
     position: relative;
     width: min(100% - 32px, 1200px);
-  }
-
-  .nav__button {
-    padding: 12px 20px;
-    font-size: 0.9rem;
   }
 }
 

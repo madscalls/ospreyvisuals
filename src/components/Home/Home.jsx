@@ -2,12 +2,13 @@ import "./Home.css";
 import Lettering from "../../assets/lettering.png";
 import blueboat from "../../assets/boatbefore.png";
 import store from "../../assets/store.png";
-import bluecar from "../../assets/bluecar.png";
-import van from "../../assets/van.png";
+import boatMain from "../../assets/boatmain.jpg";
+import van from "../../assets/van1.png";
+import visMow from "../../assets/mowing.jpg";
 import Carousel from "../Carousel/Carousel";
 
 function Home() {
-  const heroImages = [blueboat, bluecar, van, store];
+  const heroImages = [boatMain, van, store];
 
   return (
     <section className="home">
@@ -81,7 +82,7 @@ function Home() {
             <div className="home__card home__card--small">
               <span>Vehicle wrap design</span>
               <img
-                src={bluecar}
+                src={boatMain}
                 alt="portfolio image"
                 className="Home__card-image home__card-imgleft"
               />

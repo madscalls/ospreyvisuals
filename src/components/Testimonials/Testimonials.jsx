@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Testimonials.css";
 import greenWall from "../../assets/greenWall.jpg";
 import redTruck from "../../assets/redTruck.jpg";
@@ -62,6 +62,11 @@ function Testimonials() {
     testimonials[current],
     testimonials[(current + 1) % total],
   ];
+
+  useEffect(() => {
+    const interval = setInterval(() => navigate("right"), 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="testimonials" id="testimonials">

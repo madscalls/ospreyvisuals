@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Testimonials.css";
 import greenWall from "../../assets/greenWall.jpg";
 import redTruck from "../../assets/redTruck.jpg";
@@ -5,19 +6,14 @@ import piggie from "../../assets/oink.jpg";
 import boatboat from "../../assets/boat3.png";
 
 function Testimonials() {
+  const [current, setCurrent] = useState(0);
+  const [animating, setAnimating] = useState(false);
+  const [direction, setDirection] = useState(null);
+
   const showcaseImages = [
-    {
-      img: greenWall,
-      className: "Testimonials__showcase-one",
-    },
-    {
-      img: boatboat,
-      className: "Testimonials__showcase-two",
-    },
-    {
-      img: piggie,
-      className: "Testimonials__showcase-three",
-    },
+    { img: greenWall, className: "Testimonials__showcase-one" },
+    { img: boatboat, className: "Testimonials__showcase-two" },
+    { img: piggie, className: "Testimonials__showcase-three" },
   ];
 
   const testimonials = [
@@ -47,6 +43,26 @@ function Testimonials() {
     },
   ];
 
+  const total = testimonials.length;
+
+  const navigate = (dir) => {
+    if (animating) return;
+    setDirection(dir);
+    setAnimating(true);
+    setTimeout(() => {
+      setCurrent((prev) =>
+        dir === "right" ? (prev + 1) % total : (prev - 1 + total) % total,
+      );
+      setAnimating(false);
+    }, 100);
+  };
+
+  const visible = [
+    testimonials[(current - 1 + total) % total],
+    testimonials[current],
+    testimonials[(current + 1) % total],
+  ];
+
   return (
     <section className="testimonials" id="testimonials">
       <div className="testimonials__container">
@@ -57,30 +73,59 @@ function Testimonials() {
 
         <div className="testimonials__image-grid">
           {showcaseImages.map((item) => (
-            <div key={item.label} className="testimonials__image-card">
-              <img src={item.img} className={item.className} alt={item.label} />
-              <span className="testimonials__image-label">{item.label}</span>
+            <div key={item.className} className="testimonials__image-card">
+              <img src={item.img} className={item.className} alt="" />
             </div>
           ))}
         </div>
 
-        <div className="testimonials__grid">
-          {testimonials.map((testimonial) => (
-            <article key={testimonial.name} className="testimonials__card">
-              <div className="testimonials__quote-mark">❞</div>
+        <div className="testimonials__carousel">
+          <button
+            className="testimonials__arrow testimonials__arrow--left"
+            onClick={() => navigate("left")}
+            aria-label="Previous"
+          >
+            &#8249;
+          </button>
 
-              <p className="testimonials__quote">"{testimonial.quote}"</p>
+          <div
+            className={`testimonials__grid testimonials__grid--sliding ${animating ? `testimonials__grid--slide-${direction}` : ""}`}
+          >
+            {testimonials.map((testimonial, i) => (
+              <article
+                key={testimonial.name + i}
+                className={`testimonials__card ${i === current ? "testimonials__card--active" : "testimonials__card--side"}`}
+              >
+                <div className="testimonials__quote-mark">&#10077;</div>
+                <p className="testimonials__quote">
+                  &ldquo;{testimonial.quote}&rdquo;
+                </p>
+                <div className="testimonials__result">
+                  <span>•</span>
+                  <p>{testimonial.result}</p>
+                </div>
+                <div className="testimonials__author">
+                  <h3 className="testimonials__name">{testimonial.name}</h3>
+                </div>
+              </article>
+            ))}
+          </div>
 
-              <div className="testimonials__result">
-                <span>•</span>
-                <p>{testimonial.result}</p>
-              </div>
+          <button
+            className="testimonials__arrow testimonials__arrow--right"
+            onClick={() => navigate("right")}
+            aria-label="Next"
+          >
+            &#8250;
+          </button>
+        </div>
 
-              <div className="testimonials__author">
-                <h3 className="testimonials__name">{testimonial.name}</h3>
-                <p className="testimonials__business">{testimonial.business}</p>
-              </div>
-            </article>
+        <div className="testimonials__dots">
+          {testimonials.map((_, i) => (
+            <span
+              key={i}
+              className={`testimonials__dot ${i === current ? "testimonials__dot--active" : ""}`}
+            />
           ))}
         </div>
       </div>

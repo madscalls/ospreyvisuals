@@ -47,6 +47,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin-bottom: 40px;
+  height: 300px;
 }
 
 .testimonials__image-card {
@@ -62,6 +63,9 @@
     ),
     rgba(12, 15, 22, 0.88);
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .testimonials__image-label {
@@ -77,6 +81,19 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+}
+
+.Testimonials__showcase-one,
+.Testimonials__showcase-two,
+.Testimonials__showcase-three {
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  flex: 1;
 }
 
 .testimonials__card {

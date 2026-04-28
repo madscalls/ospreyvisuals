@@ -1,10 +1,23 @@
 import "./Testimonials.css";
+import greenWall from "../../assets/greenWall.jpg";
+import redTruck from "../../assets/redTruck.jpg";
+import piggie from "../../assets/oink.jpg";
+import boatboat from "../../assets/boat3.png";
 
 function Testimonials() {
   const showcaseImages = [
-    "Window vinyl graphics installation",
-    "Outdoor monument sign",
-    "Custom fabricated metal sign",
+    {
+      img: greenWall,
+      className: "Testimonials__showcase-one",
+    },
+    {
+      img: boatboat,
+      className: "Testimonials__showcase-two",
+    },
+    {
+      img: piggie,
+      className: "Testimonials__showcase-three",
+    },
   ];
 
   const testimonials = [
@@ -37,9 +50,10 @@ function Testimonials() {
         </div>
 
         <div className="testimonials__image-grid">
-          {showcaseImages.map((label) => (
-            <div key={label} className="testimonials__image-card">
-              <span className="testimonials__image-label">{label}</span>
+          {showcaseImages.map((item) => (
+            <div key={item.label} className="testimonials__image-card">
+              <img src={item.img} className={item.className} alt={item.label} />
+              <span className="testimonials__image-label">{item.label}</span>
             </div>
           ))}
         </div>

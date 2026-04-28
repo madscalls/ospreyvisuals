@@ -5,10 +5,11 @@ import store from "../../assets/store.png";
 import boatMain from "../../assets/boatmain.jpg";
 import van from "../../assets/van1.png";
 import visMow from "../../assets/mowing.jpg";
+import nickTruck from "../../assets/nick2.png";
 import Carousel from "../Carousel/Carousel";
 
 function Home() {
-  const heroImages = [boatMain, van, store];
+  const heroImages = [boatMain, visMow, store];
 
   return (
     <section className="home">
@@ -82,7 +83,7 @@ function Home() {
             <div className="home__card home__card--small">
               <span>Vehicle wrap design</span>
               <img
-                src={boatMain}
+                src={nickTruck}
                 alt="portfolio image"
                 className="Home__card-image home__card-imgleft"
               />

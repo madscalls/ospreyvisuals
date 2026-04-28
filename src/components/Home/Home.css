@@ -213,7 +213,28 @@
 }
 
 .home__card--small {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  overflow: hidden;
   height: 230px;
+  width: 100%;
+}
+
+.home__card--small span {
+  flex-shrink: 0;
+}
+
+.home__card-imgleft {
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  flex: 1;
 }
 
 .home__stat-card {
@@ -255,10 +276,14 @@
 }
 
 .home__card-imgleft {
-  object-fit: contain;
+  object-fit: cover;
   position: relative;
-  top: -250px;
-  left: -120px;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  flex: 1;
 }
 
 @media (max-width: 980px) {
@@ -307,5 +332,18 @@
   .home__benefits {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .home__card--small {
+    width: 100%;
+  }
+
+  .home__card-imgleft {
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    flex: 1;
   }
 }

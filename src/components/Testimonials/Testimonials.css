@@ -99,6 +99,8 @@
   opacity: 0.9;
 }
 .testimonials__card {
+  height: 420px;
+  overflow-y: auto;
   min-height: 320px;
   padding: 22px;
   border-radius: 20px;

@@ -39,6 +39,12 @@ function Testimonials() {
       result: "Prompt Service",
       name: "Richard Harris",
     },
+    {
+      quote:
+        "Nick was Super helpful through the whole process.. Super proffesional and I will definitely be back to get some more work done soon!",
+      result: "Striving to earn YOU business",
+      name: "Marcus K",
+    },
   ];
 
   return (

@@ -48,7 +48,7 @@ function Quote() {
         </a>
 
         <p className="quote__note">
-          No commitment. We&apos;ll reach out within 24 hours.
+          No commitment. We'll reach out within 24 hours.
         </p>
       </div>
     </section>

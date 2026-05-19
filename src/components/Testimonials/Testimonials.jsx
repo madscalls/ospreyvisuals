@@ -27,19 +27,19 @@ function Testimonials() {
       quote:
         "I want to thank Chad for designing my lettering on my business truck, what an awesome job he did and the proffesionalism that he gave me",
       result: "Proffesionalism",
-      name: "John R",
+      name: "John R.",
     },
     {
       quote:
         "These guys do an Amazing job! I went in their shop around 2 PM on a Thursday afternoon to discuss getting a name installed on my boat. By 4 PM it was complete. They had gone to the marina where my boat was stored. Outstanding customer service! These guys ROCK!",
       result: "Prompt Service",
-      name: "Richard Harris",
+      name: "Richard H.",
     },
     {
       quote:
         "Nick was Super helpful through the whole process.. Super proffesional and I will definitely be back to get some more work done soon!",
       result: "Striving to earn YOU business",
-      name: "Marcus K",
+      name: "Marcus K.",
     },
   ];
 

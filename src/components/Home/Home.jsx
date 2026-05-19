@@ -56,7 +56,7 @@ function Home() {
           <div className="home__benefits">
             <span>✓ Local</span>
             <span>✓ Fast Turnaround</span>
-            <span>✓ No Minimums</span>
+            <span>✓ Low Minimums</span>
           </div>
 
           <div className="home__trust">

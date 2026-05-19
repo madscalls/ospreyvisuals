@@ -39,9 +39,8 @@ function Why() {
             Mean Business
           </h2>
           <p className="why__description">
-            We don&apos;t just make things look good—we make them work. Your
-            brand is your first impression, and we make sure it&apos;s the right
-            one.
+            We don't just make things look good—we make them work. Your brand is
+            your first impression, and we make sure it's the right one.
           </p>
         </div>
 

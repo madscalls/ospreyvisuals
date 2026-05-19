@@ -14,18 +14,19 @@ import motorAfter from "../../assets/motorafter.jpg";
 function Impact() {
   const projects = [
     {
-      title: "Storefront Transformation",
+      title: "Vehicle Transformation",
       description:
-        "Turned a low-visibility storefront into a high-impact brand presence that customers notice from down the street.",
-      result: "More foot traffic within the first week",
+        "We turned a plain vehicle into a powerful mobile advertisement with custom graphics designed to build brand recognition everywhere it goes. From vinyl lettering and partial wraps to full fleet branding, your vehicle becomes a professional extension of your business.",
+      result: "More visibility, instantly",
       beforeSrc: copBefore,
       afterSrc: copAfter,
     },
     {
-      title: "Vehicle Wrap Rebrand",
+      title: "Boat Transformation",
       description:
-        "Transformed a plain fleet van into a professional mobile billboard reaching thousands of potential customers daily.",
-      result: "New calls coming in from people who saw the van",
+        "We upgraded this Yamaha cowling wih custom marine-grade vinyl, showcasing how professional boat graphics can restore and personalize you vessel from registration numbers and names to full wraps and engine decals.",
+      result:
+        "Custom boat numbers, names, wraps, and marine graphics built to stand out on the water",
       beforeSrc: motorBefore,
       afterSrc: motorAfter,
     },

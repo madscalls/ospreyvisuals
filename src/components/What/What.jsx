@@ -42,6 +42,14 @@ function What() {
       icon: "◫",
       featured: false,
     },
+    {
+      title: "3D Printing",
+      subtitle: "TURN IDEAS INTO REAL-WORLD PRODUCTS",
+      description:
+        "From prototypes and custom parts to promotional items and creative designs, our 3D printing services bring your concepts to life with precision and speed for both personal and buisness applications",
+      icon: "◫",
+      featured: false,
+    },
   ];
 
   return (

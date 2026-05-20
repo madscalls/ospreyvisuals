@@ -107,6 +107,15 @@
   font-weight: 700;
 }
 
+.why__icon .Why__icons {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 42px;
+  max-height: 42px;
+  object-fit: contain;
+}
+
 .why__card-title {
   margin: 0 0 12px;
   font-size: 1.2rem;

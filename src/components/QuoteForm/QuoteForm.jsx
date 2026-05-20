@@ -39,10 +39,10 @@ function QuoteForm() {
     <section className="quote-form" id="contact">
       <div className="quote-form__container">
         <div className="quote-form__header">
-          <p className="quote-form__eyebrow">LET&apos;S TALK</p>
+          <p className="quote-form__eyebrow">LET'S TALK</p>
           <h2 className="quote-form__title">Get Your Free Quote</h2>
           <p className="quote-form__subtitle">
-            Tell us about your project and we&apos;ll get back to you within 24
+            Tell us about your project and we'll get back to you within 24
             hours.
           </p>
           <div className="quote-form__pill">• Takes less than 60 seconds</div>

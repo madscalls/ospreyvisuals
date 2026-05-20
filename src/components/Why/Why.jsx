@@ -1,27 +1,31 @@
 import "./Why.css";
+import prices from "../../assets/icons/Pricingthatmakes.png";
+import direct from "../../assets/icons/WorkDirectlyWith.png";
+import design from "../../assets/icons/WeHelpyouDesign.png";
+import hands from "../../assets/icons/Builttomakeyour.png";
 
 function Why() {
   const reasons = [
     {
-      icon: "$",
+      icon: <img src={prices} alt="Pricetag" className="Why__icons" />,
       title: "Pricing That Makes Sense for Small Businesses",
       description:
-        "You shouldn&apos;t need an agency budget to look professional. We deliver high-quality work at rates that actually work for growing businesses.",
+        "You shouldn't need an agency budget to look professional. We deliver high-quality work at rates that actually work for growing businesses.",
     },
     {
-      icon: "◉",
+      icon: <img src={direct} alt="icon" className="Why__icons" />,
       title: "Work Directly With Us—No Middlemen",
       description:
-        "We&apos;re local and we&apos;re accessible. You get face-to-face service, real answers to your questions, and people who care about your outcome.",
+        "We're local and we're accessible. You get face-to-face service, real answers to your questions, and people who care about your outcome.",
     },
     {
-      icon: "⌁",
+      icon: <img src={design} alt="pencil and ruler" className="Why__icons" />,
       title: "We Help You Design It Right",
       description:
-        "Not sure what you need? That&apos;s okay. We walk you through the process, offer guidance, and make sure the final product actually works for your business.",
+        "Not sure what you need? That's okay. We walk you through the process, offer guidance, and make sure the final product actually works for your business.",
     },
     {
-      icon: "◌",
+      icon: <img src={hands} alt="Hand Icon" className="Why__icons" />,
       title: "Built to Make Your Business Look Professional",
       description:
         "Every project we take on is designed to help you attract more customers—not just look pretty. Results matter to us as much as they do to you.",

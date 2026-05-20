@@ -1,4 +1,10 @@
 import "./What.css";
+import splat from "../../assets/icons/Branding.png";
+import signage from "../../assets/icons/Signage.png";
+import vehicle from "../../assets/icons/Vehicle.png";
+import laser from "../../assets/icons/Laser.png";
+import media from "../../assets/icons/DigitalMedia.png";
+import threeD from "../../assets/icons/threeDPrinting.png";
 
 function What() {
   const services = [
@@ -7,7 +13,7 @@ function What() {
       subtitle: "BUILD A BRAND CUSTOMERS REMEMBER",
       description:
         "A strong logo and visual identity builds instant trust. We design brand packages that make your business look established, professional, and worth choosing.",
-      icon: "⦿",
+      icon: <img src={splat} alt="splat" className="what__icon" />,
       featured: false,
     },
     {
@@ -15,7 +21,7 @@ function What() {
       subtitle: "GET SEEN BEFORE CUSTOMERS WALK IN THE DOOR",
       description:
         "Storefront signs, banners, window graphics, and printed materials that make your location impossible to miss and your brand impossible to forget.",
-      icon: "▣",
+      icon: <img src={signage} alt="signage" className="what__icon" />,
       featured: true,
     },
     {
@@ -23,7 +29,7 @@ function What() {
       subtitle: "TURN YOUR VEHICLE INTO A 24/7 ADVERTISEMENT",
       description:
         "Every mile you drive is marketing. Custom wraps and vinyl lettering put your brand in front of thousands of potential customers every single day.",
-      icon: "◔",
+      icon: <img src={vehicle} alt="vehicle" className="what__icon-img" />,
       featured: true,
     },
     {
@@ -31,7 +37,7 @@ function What() {
       subtitle: "MAKE YOUR SPACE COMMAND ATTENTION",
       description:
         "Dimensional letters, metal signage, and custom built displays that create a premium, professional presence inside and outside your business.",
-      icon: "⌁",
+      icon: <img src={laser} alt="Laser" className="what__icon-img" />,
       featured: false,
     },
     {
@@ -39,7 +45,7 @@ function What() {
       subtitle: "STAY CONSISTENT ACROSS EVERY PLATFORM",
       description:
         "Social media graphics, digital ads, and web-ready visuals that keep your brand looking polished whether someone finds you online or in person.",
-      icon: "◫",
+      icon: <img src={media} alt="meta ball" className="what__icon-img" />,
       featured: false,
     },
     {
@@ -47,7 +53,7 @@ function What() {
       subtitle: "TURN IDEAS INTO REAL-WORLD PRODUCTS",
       description:
         "From prototypes and custom parts to promotional items and creative designs, our 3D printing services bring your concepts to life with precision and speed for both personal and buisness applications",
-      icon: "◫",
+      icon: <img src={threeD} alt="Printer" className="what__icon-img" />,
       featured: false,
     },
   ];

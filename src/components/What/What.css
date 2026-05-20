@@ -42,7 +42,7 @@
 .what__eyebrow {
   margin: 0 0 14px;
   color: #ff7a1a;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.16em;
 }
@@ -123,6 +123,13 @@
   color: #ff7a1a;
   font-size: 1.1rem;
   border: 1px solid rgba(255, 122, 26, 0.16);
+}
+
+.what__icon-img {
+  object-fit: contain;
+  padding: 5px 5px;
+  height: 35px;
+  width: 35px;
 }
 
 .what__tag {

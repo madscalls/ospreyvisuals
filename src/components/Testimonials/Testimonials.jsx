@@ -26,7 +26,7 @@ function Testimonials() {
     {
       quote:
         "I want to thank Chad for designing my lettering on my business truck, what an awesome job he did and the proffesionalism that he gave me",
-      result: "Proffesionalism",
+      result: "Profesionalism",
       name: "John R.",
     },
     {

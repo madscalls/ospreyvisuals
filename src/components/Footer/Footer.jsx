@@ -17,7 +17,6 @@ function Footer() {
           <a href="https://www.facebook.com/OspreyVisuals/">
             <img src={Facebook} className="Footer__social-icon fb" />
           </a>
-          <a href="#contact">Contact</a>
         </nav>
 
         <p className="footer__copyright">

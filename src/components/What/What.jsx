@@ -20,7 +20,7 @@ function What() {
       title: "Signage & Print",
       subtitle: "GET SEEN BEFORE CUSTOMERS WALK IN THE DOOR",
       description:
-        "Storefront signs, banners, window graphics, and printed materials that make your location impossible to miss and your brand impossible to forget.",
+        "Yard signs, banners, storefront signage, window graphics, business cards, flyers, magnets, stickers, and much more. Prints that will make your brand or location impossible to miss and even harder to forget.",
       icon: <img src={signage} alt="signage" className="what__icon" />,
       featured: true,
     },
@@ -33,10 +33,10 @@ function What() {
       featured: true,
     },
     {
-      title: "Custom Fabrication",
-      subtitle: "MAKE YOUR SPACE COMMAND ATTENTION",
+      title: "Laser Engraving",
+      subtitle: "PRECISION ENGRAVING FOR LASTING IMPRESSION",
       description:
-        "Dimensional letters, metal signage, and custom built displays that create a premium, professional presence inside and outside your business.",
+        "Custom engraving on wood, acrylic, leather, metal, and more. Perfect for business signage, branded merchandise, awards, gifts, and personalized products that add a professional and memorable touch.",
       icon: <img src={laser} alt="Laser" className="what__icon-img" />,
       featured: false,
     },
@@ -44,7 +44,7 @@ function What() {
       title: "Digital & Media",
       subtitle: "STAY CONSISTENT ACROSS EVERY PLATFORM",
       description:
-        "Social media graphics, digital ads, and web-ready visuals that keep your brand looking polished whether someone finds you online or in person.",
+        "Websites, social media graphics, digital ads, and web-ready visuals that keep your brand looking polished whether someone finds you online or in person.",
       icon: <img src={media} alt="meta ball" className="what__icon-img" />,
       featured: false,
     },

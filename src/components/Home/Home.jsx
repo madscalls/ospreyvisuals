@@ -85,7 +85,7 @@ function Home() {
               <img
                 src={nickTruck}
                 alt="portfolio image"
-                className="Home__card-image home__card-imgleft"
+                className="home__card-image home__card-imgleft"
               />
             </div>
 
@@ -94,7 +94,7 @@ function Home() {
               <img
                 src={van}
                 alt="portfolio image"
-                className="Home__card-image home__card-imgsmall"
+                className="home__card-image home__card-imgsmall"
               />
             </div>
           </div>

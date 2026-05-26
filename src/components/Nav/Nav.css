@@ -137,10 +137,12 @@ a:hover {
     top: 100%;
     left: 0;
     right: 0;
+    width: 100%;
+    box-sizing: border-box;
     background: rgba(6, 8, 12, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    padding: 20px;
+    padding: 20px 16px;
     gap: 20px;
     z-index: 999;
   }
@@ -151,7 +153,20 @@ a:hover {
   }
 
   .nav__button {
-    display: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+    max-width: 100%;
+    min-width: 0;
+    flex-shrink: 1;
+    box-sizing: border-box;
+  }
+
+  .nav__logo-pic {
+    height: 40px;
   }
 
   .nav__hamburger {
@@ -160,22 +175,27 @@ a:hover {
 
   .nav__container {
     position: relative;
-    width: min(100% - 32px, 1200px);
+    width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
   }
 }
 
-@media (max-width: 432px) {
+@media (max-width: 350px) {
   .nav__button {
-    padding: 10px 14px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    padding: 0.35rem 0.9rem;
   }
 }
 
 .nav__button {
   border: none;
-  display: block;
+  display: inline-block;
   position: relative;
-  padding: 0.7em 2.4em;
+  padding: 0.7rem 2.4rem;
+  white-space: nowrap;
   font-size: 18px;
   background: #ff7a1a;
   color: #fff;

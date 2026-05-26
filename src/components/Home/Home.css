@@ -226,15 +226,18 @@
   flex-shrink: 0;
 }
 
-.home__card-imgleft {
+.home__card-image,
+.home__card-imgleft,
+.home__card-imgsmall {
   object-fit: cover;
-  position: relative;
+  display: block;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100% !important;
-  height: 100% !important;
-  max-width: none !important;
-  flex: 1;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  min-height: 100%;
 }
 
 .home__stat-card {
@@ -346,4 +349,21 @@
     object-fit: cover;
     flex: 1;
   }
+}
+
+/* Ensure small card images always fill their card (override earlier/duplicate rules) */
+.home__card-image,
+.home__card-imgleft,
+.home__card-imgsmall {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Nudge the van image down slightly so side lettering is more visible */
+.home__card-imgsmall {
+  object-position: 50% 30% !important;
 }

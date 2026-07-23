@@ -1,8 +1,8 @@
 import "./Impact.css";
 import BeforeAfterSlider from "../BeforeAfterSlider/BeforeAfterSlider";
-import boatBefore from "../../assets/boat.png";
-import boatAfter from "../../assets/boat2.png";
-import vanBefore from "../../assets/van.png"; // swap with your actual van before image
+// import boatBefore from "../../assets/boat.png";
+// import boatAfter from "../../assets/boat2.png";
+// import vanBefore from "../../assets/van.png"; // swap with your actual van before image
 import vanAfter from "../../assets/van1.png"; // swap with your actual van after image
 
 import copBefore from "../../assets/copcarbefore.jpg";

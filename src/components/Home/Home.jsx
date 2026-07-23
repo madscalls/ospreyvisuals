@@ -1,6 +1,5 @@
 import "./Home.css";
 import Lettering from "../../assets/lettering.png";
-import blueboat from "../../assets/boatbefore.png";
 import store from "../../assets/store.png";
 import boatMain from "../../assets/boatmain.jpg";
 import van from "../../assets/van1.png";

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Testimonials.css";
 import greenWall from "../../assets/greenWall.jpg";
-import redTruck from "../../assets/redTruck.jpg";
 import piggie from "../../assets/oink.jpg";
 import boatboat from "../../assets/boat3.png";
 
